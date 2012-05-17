@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+
+sourceCompatibility = 1.5
+version = '0.1'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'io.netty:netty:3.4.4.Final'
+}
