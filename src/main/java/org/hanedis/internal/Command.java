@@ -4,7 +4,7 @@ package org.hanedis.internal;
 /**
  * Created Date: 5/15/12
  */
-public class Command {
+public class Command<R> {
 
     private final Type type;
 
@@ -19,10 +19,13 @@ public class Command {
         this.args = args;
     }
 
-    Type type() {
+    public Type type() {
         return type;
     }
 
+    public Object[] args() {
+        return args;
+    }
 
     public enum Type {
         SET,
